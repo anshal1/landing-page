@@ -1,0 +1,198 @@
+.main_page1_container {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.main_page1_container::-webkit-scrollbar{
+  width: 8px;
+}
+.main_page1_container::-webkit-scrollbar-button{
+  display: none;
+}
+.main_page1_container::-webkit-scrollbar-thumb{
+  width: 100%;
+  background-color: rgba(165, 42, 42, .7);
+  border-radius: 10px;
+}
+.main_page1_container::-webkit-scrollbar-track{
+  border-radius: 10px;
+  background-color: grey;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: auto;
+}
+@media only screen and (min-width: 750px) {
+  .text_header {
+    position: relative;
+    transform: rotateY(180deg);
+    width: 50%;
+    height: 100vh;
+    background-image: url("../img/hd-wallpaper-ge3cb9aebf_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .image_container {
+    width: 50%;
+    height: 100vh;
+    background-image: url("../img/hd-wallpaper-ge3cb9aebf_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .text_header_phone {
+    display: none;
+  }
+  .text {
+    width: 100%;
+    padding: 16px;
+    height: 100vh;
+    transform: rotateY(180deg);
+    color: white;
+    background-color: rgba(97, 97, 97, 0.3);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 12px;
+  }
+  .text h1 {
+    font-size: 32px;
+    font-weight: 800;
+    word-break: normal;
+    text-align: justify;
+  }
+  .text h2 {
+    font-size: 24px;
+    font-size: 600;
+    word-break: normal;
+    text-align: justify;
+  }
+  .text p {
+    font-size: 16px;
+    line-height: 1.5em;
+    font-size: 500;
+    word-break: normal;
+    text-align: justify;
+  }
+}
+html::-webkit-scrollbar{
+  display: none;
+}
+@media only screen and (max-width: 750px) {
+  .image_container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/hd-wallpaper-ge3cb9aebf_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .text_header {
+    display: none;
+  }
+  .text_header_phone {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    color: white;
+  }
+  .text h1 {
+    font-size: 24px;
+    font-weight: 800;
+    word-break: normal;
+    text-align: justify;
+    line-height: 4rem;
+  }
+  .text h2 {
+    font-size: 18px;
+    font-size: 600;
+    word-break: normal;
+    line-height: 3rem;
+    text-align: justify;
+  }
+  .text p {
+    font-size: 16px;
+    line-height: 1.5em;
+    font-size: 500;
+    word-break: normal;
+    text-align: justify;
+  }
+  .cards {
+    margin-top: 12px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .heading h1 {
+    color: rgba(165, 42, 42, .35);
+    position: relative;
+    font-size: 28px;
+    text-align: justify;
+    word-break: normal;
+    margin: 5px;
+  }
+  .heading h1::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    width: 8rem;
+    height: 8px;
+    background: rgba(165, 42, 42, .8);
+    border-radius: 10px;
+    transition: all 200ms;
+  }
+  .card_holder{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .heading h1 {
+    color: rgba(165, 42, 42, .35);
+    position: relative;
+    font-size: 28px;
+    text-align: justify;
+    word-break: normal;
+    margin: 10px;
+  }
+  .heading h1::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    width: 8rem;
+    height: 8px;
+    background: rgba(165, 42, 42, .8);
+    border-radius: 10px;
+    transition: all 200ms;
+  } 
+  .cards {
+    margin-top: 12px;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .card_holder{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
